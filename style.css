@@ -1,5 +1,10 @@
 html {
-        font-family: .sans-serif;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #ff7e5f, #feb46b);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
 
       body {
