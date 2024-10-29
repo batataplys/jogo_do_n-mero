@@ -16,21 +16,21 @@ function verificarPalpite() {
     palpites.textContent += palpiteUsuario + " ";
 
      if (palpiteUsuario === numeroAleatorio) {
-        ultimoResultado.textContent = "Parabéns! Você acertou!!!";
+        ultimoResultado.textContent = "CONGRATULAÇÕES";
         ultimoResultado.style.backgroundColor = "green";
         baixoOuAlto.textContent = "";
         finalizarJogo();
         } else if (contagemPalpites === 10) {
-            ultimoResultado.textContent = "FIM DE JOGO!!!";
+            ultimoResultado.textContent = "CABÔ";
             baixoOuAlto.textContent = "";
             finalizarJogo();
         } else {
-            ultimoResultado.textContent = "ERRADO!!!!!!!";
+            ultimoResultado.textContent = "ERRROOOOU";
             ultimoResultado.style.backgroundColor = "red";
             if (palpiteUsuario < numeroAleatorio) {
-                baixoOuAlto.textContent = "MUITO BAIXO!!!!!!"
+                baixoOuAlto.textContent = "TÁ FOFO"
             } else if (palpiteUsuario > numeroAleatorio) {
-                baixoOuAlto.textContent = "MUITO ALTO!!!!!!"
+                baixoOuAlto.textContent = "SLK TÁ MUITO ALTO PAEH"
             }
         }
 
